@@ -4,6 +4,7 @@ namespace RstGroup\ElasticsearchModule\Test;
 
 use Elasticsearch\Client;
 use PHPUnit_Framework_TestCase;
+use Psr\Log\NullLogger;
 use RstGroup\ElasticsearchModule\ConfigProvider;
 use RstGroup\ElasticsearchModule\ElasticsearchClientFactory;
 use Zend\ServiceManager\ServiceManager;
@@ -31,7 +32,7 @@ class ElasticsearchClientFactoryTest extends PHPUnit_Framework_TestCase
     public function testCreateValidClientWithLogger()
     {
         $configProvider = new ConfigProvider();
-        $logger = new \Psr\Log\NullLogger();
+        $logger = new NullLogger();
 
         $serviceManagerConfig = $configProvider->getDependenciesConfig();
         $serviceManagerConfig['services'] = [
