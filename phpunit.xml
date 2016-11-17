@@ -1,0 +1,13 @@
+<phpunit bootstrap="vendor/autoload.php"
+         backupStaticAttributes="false"
+         backupGlobals="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true">
+    <testsuites>
+        <testsuite name="RSTGroup OrdersRepository unit tests">
+            <directory>./test</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
