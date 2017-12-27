@@ -3,13 +3,13 @@
 namespace RstGroup\ElasticsearchModule\Test;
 
 use Elasticsearch\Client;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use RstGroup\ElasticsearchModule\ConfigProvider;
 use RstGroup\ElasticsearchModule\ElasticsearchClientFactory;
 use Zend\ServiceManager\ServiceManager;
 
-class ElasticsearchClientFactoryTest extends PHPUnit_Framework_TestCase
+class ElasticsearchClientFactoryTest extends TestCase
 {
     public function testCreateValidClientByDefaultConfig()
     {
