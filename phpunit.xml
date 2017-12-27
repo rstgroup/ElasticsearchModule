@@ -6,7 +6,7 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true">
     <testsuites>
-        <testsuite name="RSTGroup OrdersRepository unit tests">
+        <testsuite>
             <directory>./test</directory>
         </testsuite>
     </testsuites>
